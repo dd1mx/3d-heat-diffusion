@@ -6,4 +6,4 @@ A C++ simulation that compares serial, OpenMP, and MPI + OpenMP implementations.
 
 The console reports runtime, speedup, efficiency, and error against the serial result.
 
-[Slides](MCS_Heat_Diffusion3D_PofA.pptx) · [Results](results/) · [Heat map](diffusion.png)
+[Slides](Heat3D_MCS.pptx) · [Results](results/) · [Heat map](diffusion.png)
