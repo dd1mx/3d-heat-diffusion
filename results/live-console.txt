@@ -1,0 +1,15 @@
+3D HEAT DIFFUSION | 224 x 224 x 226, 42 steps
+Median of 3 runs; setup and correctness checks are outside the timer.
+
+Mode              Ranks  Threads     Seconds    Speedup      Eff. %      Max error    Check
+Serial                1        1      0.7306       1.00      100.00       0.00e+00     PASS
+OpenMP                1        2      0.4461       1.64       81.89       0.00e+00     PASS
+OpenMP                1        4      0.3620       2.02       50.46       0.00e+00     PASS
+OpenMP                1        8      0.3719       1.96       24.56       0.00e+00     PASS
+MPI blocking          3        1      0.4169       1.75       58.42       0.00e+00     PASS
+MPI blocking          3        2      0.4029       1.81       30.23       0.00e+00     PASS
+MPI overlap           3        1      0.3954       1.85       61.59       0.00e+00     PASS
+MPI overlap           3        2      0.3890       1.88       31.30       0.00e+00     PASS
+
+Sine-mode check: max error = 1.221e-15
+PASS: all comparisons matched.

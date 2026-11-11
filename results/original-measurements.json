@@ -1,0 +1,322 @@
+[
+  {
+    "mode": "serial",
+    "ranks": 1,
+    "threads": 1,
+    "seconds": 0.798166799825,
+    "max_error": null,
+    "error_precise": null,
+    "peak": 94.7727074491,
+    "ok": true,
+    "samples": [
+      0.738428900018,
+      0.798166799825,
+      0.82585490006
+    ],
+    "experiment": "strong",
+    "nx": 224,
+    "ny": 224,
+    "nz": 226,
+    "steps": 42
+  },
+  {
+    "mode": "omp",
+    "ranks": 1,
+    "threads": 2,
+    "seconds": 0.444679399952,
+    "max_error": null,
+    "error_precise": null,
+    "peak": 94.7727074491,
+    "ok": true,
+    "samples": [
+      0.43836140004,
+      0.444679399952,
+      0.485050499905
+    ],
+    "experiment": "strong",
+    "nx": 224,
+    "ny": 224,
+    "nz": 226,
+    "steps": 42
+  },
+  {
+    "mode": "omp",
+    "ranks": 1,
+    "threads": 4,
+    "seconds": 0.359383899951,
+    "max_error": null,
+    "error_precise": null,
+    "peak": 94.7727074491,
+    "ok": true,
+    "samples": [
+      0.349367399933,
+      0.359383899951,
+      0.37199159991
+    ],
+    "experiment": "strong",
+    "nx": 224,
+    "ny": 224,
+    "nz": 226,
+    "steps": 42
+  },
+  {
+    "mode": "omp",
+    "ranks": 1,
+    "threads": 8,
+    "seconds": 0.379804499913,
+    "max_error": null,
+    "error_precise": null,
+    "peak": 94.7727074491,
+    "ok": true,
+    "samples": [
+      0.370432200143,
+      0.379804499913,
+      0.382314299932
+    ],
+    "experiment": "strong",
+    "nx": 224,
+    "ny": 224,
+    "nz": 226,
+    "steps": 42
+  },
+  {
+    "mode": "hybrid",
+    "ranks": 2,
+    "threads": 1,
+    "seconds": 0.47512359987,
+    "max_error": null,
+    "error_precise": null,
+    "peak": 94.7727074491,
+    "ok": true,
+    "samples": [
+      0.457204099977,
+      0.47512359987,
+      0.498230499914
+    ],
+    "experiment": "strong",
+    "nx": 224,
+    "ny": 224,
+    "nz": 226,
+    "steps": 42
+  },
+  {
+    "mode": "hybrid",
+    "ranks": 2,
+    "threads": 2,
+    "seconds": 0.364798099967,
+    "max_error": null,
+    "error_precise": null,
+    "peak": 94.7727074491,
+    "ok": true,
+    "samples": [
+      0.3478321,
+      0.364798099967,
+      0.369620300131
+    ],
+    "experiment": "strong",
+    "nx": 224,
+    "ny": 224,
+    "nz": 226,
+    "steps": 42
+  },
+  {
+    "mode": "hybrid",
+    "ranks": 2,
+    "threads": 4,
+    "seconds": 0.387319700094,
+    "max_error": null,
+    "error_precise": null,
+    "peak": 94.7727074491,
+    "ok": true,
+    "samples": [
+      0.386514300015,
+      0.387319700094,
+      0.400616399944
+    ],
+    "experiment": "strong",
+    "nx": 224,
+    "ny": 224,
+    "nz": 226,
+    "steps": 42
+  },
+  {
+    "mode": "hybrid",
+    "ranks": 4,
+    "threads": 2,
+    "seconds": 0.406506999861,
+    "max_error": null,
+    "error_precise": null,
+    "peak": 94.7727074491,
+    "ok": true,
+    "samples": [
+      0.398876399966,
+      0.406506999861,
+      0.473298300058
+    ],
+    "experiment": "strong",
+    "nx": 224,
+    "ny": 224,
+    "nz": 226,
+    "steps": 42
+  },
+  {
+    "mode": "overlap",
+    "ranks": 2,
+    "threads": 1,
+    "seconds": 0.452242000028,
+    "max_error": null,
+    "error_precise": null,
+    "peak": 94.7727074491,
+    "ok": true,
+    "samples": [
+      0.436911099823,
+      0.452242000028,
+      0.458825299982
+    ],
+    "experiment": "strong",
+    "nx": 224,
+    "ny": 224,
+    "nz": 226,
+    "steps": 42
+  },
+  {
+    "mode": "overlap",
+    "ranks": 2,
+    "threads": 2,
+    "seconds": 0.409108299995,
+    "max_error": null,
+    "error_precise": null,
+    "peak": 94.7727074491,
+    "ok": true,
+    "samples": [
+      0.405022200197,
+      0.409108299995,
+      0.411127400119
+    ],
+    "experiment": "strong",
+    "nx": 224,
+    "ny": 224,
+    "nz": 226,
+    "steps": 42
+  },
+  {
+    "mode": "overlap",
+    "ranks": 2,
+    "threads": 4,
+    "seconds": 0.401599900099,
+    "max_error": null,
+    "error_precise": null,
+    "peak": 94.7727074491,
+    "ok": true,
+    "samples": [
+      0.383360099979,
+      0.401599900099,
+      0.402962099994
+    ],
+    "experiment": "strong",
+    "nx": 224,
+    "ny": 224,
+    "nz": 226,
+    "steps": 42
+  },
+  {
+    "mode": "overlap",
+    "ranks": 4,
+    "threads": 2,
+    "seconds": 0.415823600022,
+    "max_error": null,
+    "error_precise": null,
+    "peak": 94.7727074491,
+    "ok": true,
+    "samples": [
+      0.413650700124,
+      0.415823600022,
+      0.427351900144
+    ],
+    "experiment": "strong",
+    "nx": 224,
+    "ny": 224,
+    "nz": 226,
+    "steps": 42
+  },
+  {
+    "mode": "hybrid",
+    "ranks": 1,
+    "threads": 1,
+    "seconds": 0.0542463001329,
+    "max_error": null,
+    "error_precise": null,
+    "peak": 41.6680444225,
+    "ok": true,
+    "samples": [
+      0.0533414001111,
+      0.0542463001329,
+      0.0543663001154
+    ],
+    "experiment": "weak",
+    "nx": 160,
+    "ny": 160,
+    "nz": 26,
+    "steps": 55
+  },
+  {
+    "mode": "hybrid",
+    "ranks": 2,
+    "threads": 1,
+    "seconds": 0.0627683000639,
+    "max_error": null,
+    "error_precise": null,
+    "peak": 64.7940985065,
+    "ok": true,
+    "samples": [
+      0.0613794999663,
+      0.0627683000639,
+      0.063160300022
+    ],
+    "experiment": "weak",
+    "nx": 160,
+    "ny": 160,
+    "nz": 50,
+    "steps": 55
+  },
+  {
+    "mode": "hybrid",
+    "ranks": 4,
+    "threads": 1,
+    "seconds": 0.126006100094,
+    "max_error": null,
+    "error_precise": null,
+    "peak": 81.5909677771,
+    "ok": true,
+    "samples": [
+      0.122190699913,
+      0.126006100094,
+      0.14254130004
+    ],
+    "experiment": "weak",
+    "nx": 160,
+    "ny": 160,
+    "nz": 98,
+    "steps": 55
+  },
+  {
+    "mode": "hybrid",
+    "ranks": 8,
+    "threads": 1,
+    "seconds": 0.232461199863,
+    "max_error": null,
+    "error_precise": null,
+    "peak": 88.5914543729,
+    "ok": true,
+    "samples": [
+      0.216776400106,
+      0.232461199863,
+      0.232637299923
+    ],
+    "experiment": "weak",
+    "nx": 160,
+    "ny": 160,
+    "nz": 194,
+    "steps": 55
+  }
+]

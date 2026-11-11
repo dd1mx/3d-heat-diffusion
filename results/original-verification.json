@@ -1,0 +1,192 @@
+[
+  {
+    "mode": "serial",
+    "ranks": 1,
+    "threads": 1,
+    "seconds": 6.38000201434e-05,
+    "max_error": 0.0,
+    "error_precise": 0,
+    "peak": 7.18538615928,
+    "ok": true,
+    "samples": [
+      6.38000201434e-05
+    ],
+    "test": "check",
+    "dims": [
+      17,
+      13,
+      15
+    ]
+  },
+  {
+    "mode": "serial",
+    "ranks": 1,
+    "threads": 1,
+    "seconds": 6.65001571178e-05,
+    "max_error": 0.0,
+    "error_precise": 5.55111512313e-16,
+    "peak": 0.671191818151,
+    "ok": true,
+    "samples": [
+      6.65001571178e-05
+    ],
+    "test": "eigen",
+    "dims": [
+      17,
+      13,
+      15
+    ]
+  },
+  {
+    "mode": "omp",
+    "ranks": 1,
+    "threads": 4,
+    "seconds": 4.78001311421e-05,
+    "max_error": 0.0,
+    "error_precise": 0,
+    "peak": 7.18538615928,
+    "ok": true,
+    "samples": [
+      4.78001311421e-05
+    ],
+    "test": "check",
+    "dims": [
+      17,
+      13,
+      15
+    ]
+  },
+  {
+    "mode": "omp",
+    "ranks": 1,
+    "threads": 4,
+    "seconds": 3.56000382453e-05,
+    "max_error": 0.0,
+    "error_precise": 5.55111512313e-16,
+    "peak": 0.671191818151,
+    "ok": true,
+    "samples": [
+      3.56000382453e-05
+    ],
+    "test": "eigen",
+    "dims": [
+      17,
+      13,
+      15
+    ]
+  },
+  {
+    "mode": "hybrid",
+    "ranks": 2,
+    "threads": 2,
+    "seconds": 0.000114999944344,
+    "max_error": 0.0,
+    "error_precise": 0,
+    "peak": 7.18538615928,
+    "ok": true,
+    "samples": [
+      0.000114999944344
+    ],
+    "test": "check",
+    "dims": [
+      17,
+      13,
+      15
+    ]
+  },
+  {
+    "mode": "hybrid",
+    "ranks": 2,
+    "threads": 2,
+    "seconds": 9.62000340223e-05,
+    "max_error": 0.0,
+    "error_precise": 5.55111512313e-16,
+    "peak": 0.671191818151,
+    "ok": true,
+    "samples": [
+      9.62000340223e-05
+    ],
+    "test": "eigen",
+    "dims": [
+      17,
+      13,
+      15
+    ]
+  },
+  {
+    "mode": "overlap",
+    "ranks": 3,
+    "threads": 2,
+    "seconds": 0.000138500006869,
+    "max_error": 0.0,
+    "error_precise": 0,
+    "peak": 7.18538615928,
+    "ok": true,
+    "samples": [
+      0.000138500006869
+    ],
+    "test": "check",
+    "dims": [
+      17,
+      13,
+      15
+    ]
+  },
+  {
+    "mode": "overlap",
+    "ranks": 3,
+    "threads": 2,
+    "seconds": 0.000141900032759,
+    "max_error": 0.0,
+    "error_precise": 5.55111512313e-16,
+    "peak": 0.671191818151,
+    "ok": true,
+    "samples": [
+      0.000141900032759
+    ],
+    "test": "eigen",
+    "dims": [
+      17,
+      13,
+      15
+    ]
+  },
+  {
+    "mode": "overlap",
+    "ranks": 5,
+    "threads": 1,
+    "seconds": 0.000120599986985,
+    "max_error": 0.0,
+    "error_precise": 0,
+    "peak": 2.88902944753,
+    "ok": true,
+    "samples": [
+      0.000120599986985
+    ],
+    "test": "check",
+    "dims": [
+      17,
+      13,
+      7
+    ]
+  },
+  {
+    "mode": "overlap",
+    "ranks": 5,
+    "threads": 1,
+    "seconds": 0.000104199862108,
+    "max_error": 0.0,
+    "error_precise": 1.66533453694e-16,
+    "peak": 0.380726288592,
+    "ok": true,
+    "samples": [
+      0.000104199862108
+    ],
+    "test": "eigen",
+    "dims": [
+      17,
+      13,
+      7
+    ]
+  }
+]

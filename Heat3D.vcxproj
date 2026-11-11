@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{124286A1-682E-4BA0-9BC4-44F36ACCC62B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Heat3D</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <TargetName>heat</TargetName>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Configuration)\</IntDir>
+    <HeatMpiInclude Condition="'$(MSMPI_INC)' != ''">$(MSMPI_INC)</HeatMpiInclude>
+    <HeatMpiInclude Condition="'$(HeatMpiInclude)' == ''">$(MSBuildProgramFiles32)\Microsoft SDKs\MPI\Include</HeatMpiInclude>
+    <HeatMpiLib Condition="'$(MSMPI_LIB64)' != ''">$(MSMPI_LIB64)</HeatMpiLib>
+    <HeatMpiLib Condition="'$(HeatMpiLib)' == ''">$(MSBuildProgramFiles32)\Microsoft SDKs\MPI\Lib\x64</HeatMpiLib>
+    <HeatMpiExe Condition="Exists('$(MSMPI_BIN)\mpiexec.exe')">$(MSMPI_BIN)\mpiexec.exe</HeatMpiExe>
+    <HeatMpiExe Condition="'$(HeatMpiExe)' == ''">$(ProgramW6432)\Microsoft MPI\Bin\mpiexec.exe</HeatMpiExe>
+    <LocalDebuggerWorkingDirectory>$(ProjectDir)</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <LocalDebuggerCommand>$(HeatMpiExe)</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments>-n 3 &quot;$(OutDir)heat.exe&quot;</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <OpenMPSupport>true</OpenMPSupport>
+      <AdditionalIncludeDirectories>$(HeatMpiInclude);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(HeatMpiLib);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>msmpi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup><ClCompile Include="heat.cpp" /></ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
+
